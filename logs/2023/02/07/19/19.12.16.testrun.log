@@ -1,0 +1,5 @@
+2023-02-07 19:12:16  [main]:[%PARSER_ERROR[tid]] DEBUG TestNG:82 - suiteXmlPath: "C:\Users\Corei7\AppData\Local\JetBrains\IdeaIC2022.2\temp-testng-customsuite.xml"
+2023-02-07 19:12:17  [main]:[%PARSER_ERROR[tid]] INFO Utils:112 - [TestNG] Running:
+  C:\Users\Corei7\AppData\Local\JetBrains\IdeaIC2022.2\temp-testng-customsuite.xml
+
+2023-02-07 19:12:17  [main]:[%PARSER_ERROR[tid]] INFO ExtentManager:29 - Create extent report

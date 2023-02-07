@@ -13,12 +13,11 @@ import reporting.ExtentTestManager;
 import testng.TestListeners;
 
 import java.lang.reflect.Method;
+import java.time.Duration;
 import java.util.Optional;
 
 @Listeners(TestListeners.class)
 public class BaseTest {
-
-    protected ConfigProperties properties;
     protected HomePage homePage;
     private static ExtentReports extent;
 
@@ -31,13 +30,16 @@ public class BaseTest {
     @BeforeTest
     public void setUp(String browser) {
         DriverManager.setDriver(browser);
-        properties = new ConfigProperties().readConfigProperties();
+        //properties = new ConfigProperties().readConfigProperties();
         homePage = new HomePage();
+        DriverManager.getDriver().navigate().to("https://cel.ro/");
+        DriverManager.getDriver().manage().window().maximize();
+        DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
     }
 
     @BeforeClass
     public void navigateToUrl() {
-        DriverManager.getDriver().navigate().to(properties.getUrl());
+        DriverManager.getDriver().navigate().to("https://cel.ro/");
     }
 
     @BeforeMethod(alwaysRun = true)

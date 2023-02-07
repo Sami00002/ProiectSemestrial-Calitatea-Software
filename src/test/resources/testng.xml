@@ -5,13 +5,80 @@
     <listeners>
         <listener class-name="testng.AnnotationTransformer"/>
     </listeners>
+    <!--
+          <test name="Cel - like Product">
+              <parameter name="browser" value="chrome"/>
+              <classes>
+                <class name="tests.like.LikeProducts"/>
+              </classes>
+          </test>
 
-    <test name="Chrome1">
-        <parameter name="browser" value="chrome"/>
-        <classes>
-<!--            <class name="tests.products.ProductsTest"/>-->
-            <class name="tests.orders.OrderTest"/>
-        </classes>
-    </test>
 
-</suite>
+                <test name="Find products">
+                   <parameter name="browser" value="chrome"/>
+                   <classes>
+                                <class name="tests.products.ProductsTest"/>
+                    </classes>
+                </test>
+
+
+            <test name="Cel - find product">
+                <parameter name="browser" value="chrome"/>
+                <classes>
+                    <class name="tests.likeComment.LikeComment"/>
+                </classes>
+            </test>
+             -->
+
+               <test name="Cel - add to Chart">
+                   <parameter name="browser" value="chrome"/>
+                   <classes>
+                       <class name="tests.chart.AddToChart"/>
+                   </classes>
+               </test>
+
+    <!--
+         <test name="Cel - add to Chart and go to Chart">
+               <parameter name="browser" value="chrome"/>
+               <classes>
+                   <class name="tests.chart.AddToChartAndDelete"/>
+               </classes>
+           </test>
+
+           <test name="Cel - go to Iphones">
+               <parameter name="browser" value="chrome"/>
+               <classes>
+                   <class name="tests.products.Iphones"/>
+               </classes>
+           </test>
+
+           <test name="Find products">
+               <parameter name="browser" value="chrome"/>
+               <classes>
+                   <class name="tests.apple.ApplePrice"/>
+               </classes>
+           </test>
+
+           <test name="Find products">
+           <parameter name="browser" value="chrome"/>
+           <classes>
+               <class name="tests.products.ProduseleZilei"/>
+           </classes>
+           </test>
+
+           <test name="Find products">
+               <parameter name="browser" value="chrome"/>
+               <classes>
+                   <class name="tests.ultimeleProduse.UltimeleProduse"/>
+               </classes>
+           </test>
+
+           <test name="Find products">
+               <parameter name="browser" value="chrome"/>
+               <classes>
+                   <class name="tests.ultimeleProduse.CamereSupraveghere"/>
+               </classes>
+           </test>
+       -->
+
+  </suite>
